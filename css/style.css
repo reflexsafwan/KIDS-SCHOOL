@@ -257,6 +257,35 @@ hr {
   line-height: 30px; /* 187.5% */
 }
 
+.navigation-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navigation-icon > .left {
+  border-radius: 50%;
+  background: #fea301;
+  color: #fff;
+  padding: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px;
+}
+.navigation-icon > .right {
+  border-radius: 50%;
+  background: #fea301;
+  color: #fff;
+  padding: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px;
+}
 /* responsive css */
 
 @media only screen and (max-width: 576px) {
@@ -333,5 +362,9 @@ hr {
   }
   .card-3 {
     width: 100%;
+  }
+
+  .navigation-icon {
+    display: none;
   }
 }
