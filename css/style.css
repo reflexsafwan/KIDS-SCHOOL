@@ -3,3 +3,109 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap");
+
+.container {
+  width: 70%;
+  border: 2px solid red;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: Quicksand;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.menu {
+  display: flex;
+
+  align-items: center;
+}
+.menu > ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.menu > ul > li {
+  list-style: none;
+}
+.menu > ul > li > a {
+  text-decoration: none;
+  /* color: black; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.home > a {
+  color: #fea301;
+}
+.about > a {
+  color: #01acfd;
+}
+.Facilities > a {
+  color: #05d4df;
+}
+.Admissions > a {
+  color: #5d58ef;
+}
+.nav-btn {
+  background-color: #fea301;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+.nav-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  line-height: 30px;
+}
+.hamburger {
+  display: none;
+}
+hr {
+  display: none;
+}
+
+/* responsive css */
+
+/* menu area css */
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+    border: none;
+  }
+  .nav {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .logo h2 {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  hr {
+    display: block;
+
+    /* border-color: #fea301; */
+    border: none;
+    border-top: 1px solid #fea301;
+  }
+}
