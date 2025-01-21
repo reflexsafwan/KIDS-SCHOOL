@@ -10,7 +10,7 @@
   width: 70%;
   border: 2px solid red;
   margin: 0 auto;
-  padding: 40px;
+  /* padding: 40px; */
   font-family: Quicksand;
 }
 .nav {
@@ -74,12 +74,44 @@
 hr {
   display: none;
 }
+/* banner area css */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 50px; */
+}
+.banner-content h2 {
+  font-family: Quicksand;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+}
+.banner-content p {
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 24px 0px;
+}
 
+.banner-btn button {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #111;
+  border-radius: 12px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
 /* responsive css */
 
-/* menu area css */
-
 @media only screen and (max-width: 576px) {
+  /* menu area css */
   .container {
     width: 90%;
     padding: 10px;
@@ -107,5 +139,31 @@ hr {
     /* border-color: #fea301; */
     border: none;
     border-top: 1px solid #fea301;
+  }
+
+  /* banner responsive css */
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-content h2 {
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .banner-btn button {
+    color: #fff;
+
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .banner-img img {
+    width: 100%;
   }
 }
