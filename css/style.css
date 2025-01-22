@@ -8,9 +8,9 @@
 
 .container {
   width: 70%;
-  border: 2px solid red;
+
   margin: 0 auto;
-  /* padding: 40px; */
+  padding: 40px;
   font-family: Quicksand;
 }
 .nav {
@@ -288,6 +288,9 @@ hr {
 }
 
 /* story area css*/
+.story {
+  padding-bottom: 0px;
+}
 .stories {
   padding: 60px;
   background: url("../images/bg.png"),
@@ -310,7 +313,6 @@ hr {
 }
 .card-left {
   grid-row: span 2;
-
   position: relative;
 }
 .card-left-content {
@@ -523,7 +525,81 @@ hr {
   border-radius: 12px;
   background-color: #111;
   border: none;
+  margin-top: 40px;
 }
+
+footer {
+  background: #01acfd;
+}
+.footer-container {
+  width: 70%;
+
+  margin: 0 auto;
+  padding: 40px;
+}
+.footer-area {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left-header {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 35px;
+}
+.footer-left-header h2 {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text p {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+.middle-head h2 {
+  list-style-type: none;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.middle-head {
+  margin-bottom: 32px;
+}
+.middle-head > ul > li {
+  list-style-type: none;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+}
+.footer-right h2 {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 100% */
+  margin-bottom: 32px;
+}
+
 /* responsive css */
 
 @media only screen and (max-width: 576px) {
@@ -581,6 +657,7 @@ hr {
   }
   .banner-img img {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   /* curriculum area responsive */
@@ -607,7 +684,9 @@ hr {
   }
 
   /* story area responsive css */
-
+  .story {
+    padding-bottom: 0px;
+  }
   .stories {
     padding: 20px;
   }
@@ -651,5 +730,8 @@ hr {
 
   .view-btn {
     margin-top: 20px;
+  }
+  .footer-area {
+    flex-direction: column;
   }
 }
