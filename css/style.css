@@ -275,6 +275,9 @@ hr {
   font-weight: 900;
   line-height: 24px;
 }
+.navigation-icon > .left:hover {
+  background-color: red;
+}
 .navigation-icon > .right {
   border-radius: 50%;
   background: #fea301;
@@ -285,6 +288,9 @@ hr {
   font-style: normal;
   font-weight: 900;
   line-height: 24px;
+}
+.navigation-icon > .right:hover {
+  background-color: red;
 }
 
 /* story area css*/
